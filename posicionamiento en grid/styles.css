@@ -1,0 +1,46 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0 20%;
+    text-align: center;
+}
+
+
+h1 {
+    margin-top: 40px;
+    font-size: 32px;
+}
+
+.grid {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
+    gap: 30px; /* separación entre tarjetas */
+}
+
+.card {
+    border: 3px solid #8a49ff;   
+    border-radius: 12px;           
+    padding: 25px;
+    min-height: 230px;            
+}
+
+/* Precios */
+.precio {
+    font-weight: bold;
+    color: #8a49ff;
+}
+
+.precio.gratis {
+    color: #0000ff;
+}
+
+
+.promo {
+    background: #4400ff;
+    color: white;
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 18px;
+}
