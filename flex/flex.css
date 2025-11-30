@@ -1,0 +1,84 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #84250C;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+header .titulo {
+    font-size: 26px;
+    font-weight: bold;
+    
+}
+
+nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+main {
+    margin-top: 160px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+main h2 {
+    font-size: 28px;
+}
+
+.contenedor {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.oferta {
+    background-color: white;
+    width: 55%;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+.novedades {
+    width: 48%;
+}
+
+.novedades ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #84250C;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
