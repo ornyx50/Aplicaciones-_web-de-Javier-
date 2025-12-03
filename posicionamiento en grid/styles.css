@@ -19,7 +19,7 @@ h1 {
 }
 
 .card {
-    border: 3px solid #8a49ff;   
+    border: 3px solid purple;   
     border-radius: 12px;           
     padding: 25px;
     min-height: 230px;            
@@ -28,16 +28,16 @@ h1 {
 
 .precio {
     font-weight: bold;
-    color: #8a49ff;
+    color: purple;
 }
 
 .precio.gratis {
-    color: #0000ff;
+    color: blue;
 }
 
 
 .promo {
-    background: #4400ff;
+    background: blue;
     color: white;
     border-radius: 12px;
     padding: 20px;
