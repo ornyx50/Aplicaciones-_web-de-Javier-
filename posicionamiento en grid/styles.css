@@ -14,8 +14,8 @@ h1 {
 .grid {
     margin-top: 40px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
-    gap: 30px; /* separación entre tarjetas */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px; 
 }
 
 .card {
@@ -25,7 +25,7 @@ h1 {
     min-height: 230px;            
 }
 
-/* Precios */
+
 .precio {
     font-weight: bold;
     color: #8a49ff;
