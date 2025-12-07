@@ -1,0 +1,156 @@
+:root{
+    --azul-oscuro: #0b132b;
+    --azul-suave: #1c2541;
+    --acento: #06b6d4;
+    --texto: #eaf2fb;
+    --gris: #a8b3c7;
+  
+}   
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(180deg, #071227, #0b132b);
+    color: var(--texto);
+}
+
+
+
+header{
+    background: rgba(255,255,255,0.05);
+    padding: 18px;
+    border-radius: var(--radius);
+    margin: 15px;
+    text-align: center;
+  
+}
+
+header h1{
+    margin: 0;
+    color: var(--acento);
+    text-align: center;
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+  
+
+
+
+
+nav a{
+    color: var(--texto);
+    padding: 6px 12px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    background: rgba(255,255,255,0.12);
+}
+
+
+main{
+    margin: 20px auto;
+    width: min(95%, 950px);
+    display: grid;
+    grid-template-columns: 1fr 280px;
+    gap: 20px;
+}
+
+section{
+    background: rgba(255,255,255,0.03);
+    padding: 20px;
+    border-radius: var(--radius);
+}
+
+h2{
+    margin-top: 0;
+    color: var(--acento);
+}
+
+h3{
+    margin-top: 0;
+}
+
+
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+caption{
+    text-align: left;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: var(--texto);
+}
+
+thead th{
+    background: rgba(6,182,212,0.15);
+    padding: 10px;
+    color: var(--acento);
+    text-align: left;
+}
+
+tbody td{
+    padding: 10px;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+    color: var(--texto);
+}
+
+
+tfoot td{
+    padding: 10px;
+    background: rgba(255,255,255,0.05);
+    font-style: italic;
+    color: var(--gris);
+}
+
+
+aside{
+    background: rgba(255,255,255,0.05);
+    padding: 20px;
+    border-radius: var(--radius);
+    height: fit-content;
+}
+
+aside h3{
+    color: var(--acento);
+}
+
+aside p{
+    color: var(--gris);
+}
+
+
+
+footer{
+    text-align: center;
+    padding: 10px;
+    margin-top: 25px;
+    color: var(--gris);
+}
+
+
+
+@media(max-width: 800px){
+    main{
+        grid-template-columns: 1fr;
+    }
+}
+
+
