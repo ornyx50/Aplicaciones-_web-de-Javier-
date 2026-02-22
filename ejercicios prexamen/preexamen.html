@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicios Pre-Examen</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        .error {
+            color: red;
+        }
+
+        .correcto {
+            color: green;
+        }
+
+        .oscuro {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    
+    <h2>Ejercicio 1 </h2>
+    <input type="text" id="nombre">
+    <button onclick="comprobarNombre()">Comprobar</button>
+    <p id="mensajeNombre"></p>
+
+    <hr>
+
+    
+    <h2>Ejercicio 2 </h2>
+    <select id="color">
+        <option value="white">Blanco</option>
+        <option value="lightblue">Azul claro</option>
+        <option value="lightgreen">Verde claro</option>
+        <option value="lightyellow">Amarillo claro</option>
+    </select>
+    <button onclick="cambiarColor()">Aplicar color</button>
+
+    <hr>
+
+    <h2>Ejercicio 3 </h2>
+    <textarea id="texto" rows="4" cols="40" oninput="contarCaracteres()"></textarea>
+    <p id="contador">0 caracteres</p>
+
+    <hr>
+
+    <h2>Ejercicio 4 </h2>
+    <label>
+        <input type="checkbox" onchange="modoOscuro(this)">
+        Modo oscuro
+    </label>
+
+    <hr>
+
+    
+    <h2>Ejercicio 5 </h2>
+    <input type="text" id="edad">
+    <button onclick="comprobarEdad()">Comprobar edad</button>
+    <p id="mensajeEdad"></p>
+
+    <script>
+        
+        function comprobarNombre() {
+            const nombre = document.getElementById("nombre").value;
+            const mensaje = document.getElementById("mensajeNombre");
+
+            if (nombre === "") {
+                mensaje.textContent = "El nombre es obligatorio";
+                mensaje.className = "error";
+            } else if (nombre.length >= 3) {
+                mensaje.textContent = "Nombre correcto";
+                mensaje.className = "correcto";
+            } else {
+                mensaje.textContent = "El nombre debe tener al menos 3 caracteres";
+                mensaje.className = "error";
+            }
+        }
+
+       
+        function cambiarColor() {
+            const color = document.getElementById("color").value;
+            document.body.style.backgroundColor = color;
+        }
+
+       
+        function contarCaracteres() {
+            const texto = document.getElementById("texto").value;
+            const contador = document.getElementById("contador");
+
+            contador.textContent = texto.length + " caracteres";
+
+            if (texto.length > 100) {
+                contador.style.color = "red";
+            } else {
+                contador.style.color = "black";
+            }
+        }
+
+        
+        function modoOscuro(checkbox) {
+            if (checkbox.checked) {
+                document.body.classList.add("oscuro");
+            } else {
+                document.body.classList.remove("oscuro");
+            }
+        }
+
+        function comprobarEdad() {
+            const edad = document.getElementById("edad").value;
+            const mensaje = document.getElementById("mensajeEdad");
+
+            if (edad === "" || isNaN(edad)) {
+                mensaje.textContent = "Introduce una edad válida";
+                mensaje.className = "error";
+            } else if (Number(edad) < 18) {
+                mensaje.textContent = "No tienes acceso";
+                mensaje.className = "error";
+            } else {
+                mensaje.textContent = "Acceso permitido";
+                mensaje.className = "correcto";
+            }
+        }
+    </script>
+
+</body>
+</html>
