@@ -85,7 +85,7 @@
 
        
         function cambiarColor() {
-            const color = document.getElementById("color").value;
+            let color = document.getElementById("color").value;
             document.body.style.backgroundColor = color;
         }
 
@@ -117,7 +117,7 @@
             let mensaje = document.getElementById("mensajeEdad");
 
             if (edad === "" || isNaN(edad)) {
-                mensaje.textContent = "Introduce una edad válida";
+                mensaje.textContent = "Introduce una edad valida";
                 mensaje.className = "error";
             } else if (Number(edad) < 18) {
                 mensaje.textContent = "No tienes acceso";
@@ -132,3 +132,4 @@
 </body>
 
 </html>
+
