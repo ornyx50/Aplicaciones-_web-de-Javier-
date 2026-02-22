@@ -1,7 +1,7 @@
 
 function cambiarTexto() {
   const texto = document.getElementById("texto");
-  texto.textContent = "El texto ha sido cambiado ✨";
+  texto.textContent = "El texto ha sido cambiado ";
 }
 
 function cambiarColor() {
@@ -12,7 +12,7 @@ function cambiarColor() {
 function crearParrafo() {
   const caja = document.getElementById("caja");
   const nuevoParrafo = document.createElement("p");
-  nuevoParrafo.textContent = "Este es un nuevo párrafo mágico 🪄";
+  nuevoParrafo.textContent = "Este  es el nuevo parrafo";
   caja.appendChild(nuevoParrafo);
 }
 
@@ -23,4 +23,5 @@ function borrarParrafo() {
   if (parrafos.length > 1) {
     caja.removeChild(parrafos[parrafos.length - 1]);
   }
+
 }
