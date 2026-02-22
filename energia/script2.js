@@ -1,17 +1,17 @@
 function encender() {
-    const maquina = document.getElementById("maquina");
-    const titulo = document.querySelector("h1");
-    const parrafo = maquina.querySelector("p");
+    let maquina = document.getElementById("maquina");
+    let titulo = document.querySelector("h1");
+    let parrafo = maquina.querySelector("p");
 
     maquina.style.backgroundColor = "green";
     titulo.textContent = "Maquina encendida";
-    parrafo.textContent = "La maquina esta funcionando";
+    parrafo.textContent = "La maquina esta en funcionamiento";
 }
 
 function apagar() {
-    const maquina = document.getElementById("maquina");
-    const titulo = document.querySelector("h1");
-    const parrafo = maquina.querySelector("p");
+    let  maquina = document.getElementById("maquina");
+    let  titulo = document.querySelector("h1");
+    let  parrafo = maquina.querySelector("p");
 
     maquina.style.backgroundColor = "red";
     titulo.textContent = "Maquina apagada";
@@ -19,16 +19,16 @@ function apagar() {
 }
 
 function añadirMensaje() {
-    const maquina = document.getElementById("maquina");
-    const nuevoParrafo = document.createElement("p");
+    let maquina = document.getElementById("maquina");
+    let nuevoParrafo = document.createElement("p");
 
     nuevoParrafo.textContent = "Mensaje extra";
     maquina.appendChild(nuevoParrafo);
 }
 
 function borrarMensaje() {
-    const maquina = document.getElementById("maquina");
-    const parrafos = maquina.querySelectorAll("p");
+    let maquina = document.getElementById("maquina");
+    let parrafos = maquina.querySelectorAll("p");
 
    
     if (parrafos.length > 1) {
