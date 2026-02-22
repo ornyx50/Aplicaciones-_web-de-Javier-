@@ -68,8 +68,8 @@
     <script>
         
         function comprobarNombre() {
-            const nombre = document.getElementById("nombre").value;
-            const mensaje = document.getElementById("mensajeNombre");
+            let nombre = document.getElementById("nombre").value;
+            let mensaje = document.getElementById("mensajeNombre");
 
             if (nombre === "") {
                 mensaje.textContent = "El nombre es obligatorio";
@@ -91,8 +91,8 @@
 
        
         function contarCaracteres() {
-            const texto = document.getElementById("texto").value;
-            const contador = document.getElementById("contador");
+            let texto = document.getElementById("texto").value;
+            let contador = document.getElementById("contador");
 
             contador.textContent = texto.length + " caracteres";
 
@@ -113,8 +113,8 @@
         }
 
         function comprobarEdad() {
-            const edad = document.getElementById("edad").value;
-            const mensaje = document.getElementById("mensajeEdad");
+            let edad = document.getElementById("edad").value;
+            let mensaje = document.getElementById("mensajeEdad");
 
             if (edad === "" || isNaN(edad)) {
                 mensaje.textContent = "Introduce una edad válida";
@@ -130,4 +130,5 @@
     </script>
 
 </body>
+
 </html>
