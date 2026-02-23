@@ -1,4 +1,4 @@
-function encender() {
+function Encender() {
     let maquina = document.getElementById("maquina");
     let titulo = document.querySelector("h1");
     let parrafo = maquina.querySelector("p");
@@ -8,7 +8,7 @@ function encender() {
     parrafo.textContent = "La máquina está en funcionamiento";
 }
 
-function apagar() {
+function Apagar() {
     let maquina = document.getElementById("maquina");
     let titulo = document.querySelector("h1");
     let parrafo = maquina.querySelector("p");
@@ -18,7 +18,7 @@ function apagar() {
     parrafo.textContent = "La máquina está detenida";
 }
 
-function añadirMensaje() {
+function AñadirMensaje() {
     let maquina = document.getElementById("maquina");
     let nuevoParrafo = document.createElement("p");
 
@@ -26,7 +26,7 @@ function añadirMensaje() {
     maquina.appendChild(nuevoParrafo);
 }
 
-function borrarMensaje() {
+function BorrarMensaje() {
     let maquina = document.getElementById("maquina");
     let parrafos = maquina.querySelectorAll("p");
 
