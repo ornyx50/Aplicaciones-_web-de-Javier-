@@ -4,18 +4,18 @@ function encender() {
     let parrafo = maquina.querySelector("p");
 
     maquina.style.backgroundColor = "green";
-    titulo.textContent = "Maquina encendida";
-    parrafo.textContent = "La maquina esta en funcionamiento";
+    titulo.textContent = "Máquina encendida";
+    parrafo.textContent = "La máquina está en funcionamiento";
 }
 
 function apagar() {
-    let  maquina = document.getElementById("maquina");
-    let  titulo = document.querySelector("h1");
-    let  parrafo = maquina.querySelector("p");
+    let maquina = document.getElementById("maquina");
+    let titulo = document.querySelector("h1");
+    let parrafo = maquina.querySelector("p");
 
     maquina.style.backgroundColor = "red";
-    titulo.textContent = "Maquina apagada";
-    parrafo.textContent = "La maquina esta detenida";
+    titulo.textContent = "Máquina apagada";
+    parrafo.textContent = "La máquina está detenida";
 }
 
 function añadirMensaje() {
@@ -30,7 +30,6 @@ function borrarMensaje() {
     let maquina = document.getElementById("maquina");
     let parrafos = maquina.querySelectorAll("p");
 
-   
     if (parrafos.length > 1) {
         maquina.removeChild(parrafos[parrafos.length - 1]);
     }
