@@ -1,32 +1,33 @@
-const USUARIO_CORRECTO = "admin";
-const PASSWORD_CORRECTO = "1234";
+let USUARIO_CORRECTO = "admin";
+let PASSWORD_CORRECTO = "1234";
 
+let usuario = prompt("¿Cuál es tu nombre de usuario?");
 
+if (usuario !== USUARIO_CORRECTO) {
+    alert("Usuario incorrecto");
+} else {
+    let intentos = 0;
+    let acceso = false;
 
-let usuario =  prompt("cual es tu nombre de usuario")
+    while (intentos < 3) {
+        let password = prompt("Introduce la contraseña:");
 
-if (usuario != USUARIO_CORRECTO){
-        alert("usuario incorrecto")
-         let intentos = 0;
-  let password;
-  let acceso = false;
-
-}while (intentos < 3) {
-    password = prompt("Introduce la contraseña:");
-    if (password === PASSWORD_CORRECTO) {
-      alert("Acceso concedido");
-      acceso = true;
-      break; 
-    } else {
-      intentos++;
-      if (intentos < 3) {
-        alert("Contraseña incorrecta. Te quedan " + (3 - intentos) + " intento(s).");
-      }
+        if (password === PASSWORD_CORRECTO) {
+            alert("Acceso concedido");
+            acceso = true;
+            break;
+        } else {
+            intentos++;
+            if (intentos < 3) {
+                alert("Contraseña incorrecta. Te quedan " + (3 - intentos) + " intento(s).");
+            }
+        }
     }
-  }
 
-  if (!acceso) {
-    
+    if (!acceso) {
+        alert("El usuario queda bloqueado. Contacte con el administrador del sitio.");
+    }
+}
     alert("El usuario queda bloqueado. Contacte con el administrador del sitio.");
   }
 
